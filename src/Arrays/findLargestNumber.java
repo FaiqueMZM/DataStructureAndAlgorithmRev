@@ -9,7 +9,7 @@ public class findLargestNumber {
     public static int findLargest(int[] nums) {
         int max = nums[0];
         for (int i = 1; i < nums.length; i++) {     //can use for-each loop   for(int i : nums)
-            if (nums[i] > max) {
+            if (nums[i] > max) {                    //can use i instead of nums[i] if using for-each
                 max = nums[i];
             }
         }
