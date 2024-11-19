@@ -8,7 +8,7 @@ public class findLargestNumber {
 
     public static int findLargest(int[] nums) {
         int max = nums[0];
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {     //can use for-each loop   for(int i : nums)
             if (nums[i] > max) {
                 max = nums[i];
             }
@@ -21,5 +21,6 @@ public class findLargestNumber {
         int[] nums = {4,8,2,7,1,5,6};
         System.out.println("Find the largest number in the array " + Arrays.toString(nums) + "  ==>  " + findLargest(nums));
         System.out.println();
+
     }
 }
