@@ -10,6 +10,8 @@ public class removeDuplicates {
         HashSet<Character> duplicate = new HashSet<>();
         StringBuilder result = new StringBuilder();
 
+        // character order will be preserved
+
         for (char c : str.toCharArray()) {
             if (!duplicate.contains(c)) {
                 duplicate.add(c); // Add character to the set
@@ -22,6 +24,8 @@ public class removeDuplicates {
     public static String removeDuplicates2(String str) {
         HashSet<Character> duplicate = new HashSet<>();
         StringBuilder result = new StringBuilder();
+
+        // output character order will be based on hashset iteration, random order
 
         for(char c : str.toCharArray()){
             duplicate.add(c);
